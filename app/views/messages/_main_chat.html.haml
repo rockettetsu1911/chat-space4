@@ -1,0 +1,36 @@
+.main__chat
+  .main__chat--header
+    .left__box
+      .current__group
+        test
+      %ul.member__list
+        %li.member__list--first
+          member:
+        %li.member__list--second
+          masa
+    = link_to "#", class: "edit-btn" do
+      Edit
+  .messages
+    %ul.message
+      %li.message__name
+        masa
+      %li.message__date
+        2019/11/20(wed) 17:43:01
+    .message__text
+      おはよう
+    %ul.message
+      %li.message__name
+        masa
+      %li.message__date
+        2019/11/20(wed) 17:43:01
+    .message__text
+      おはよう
+  .form
+    %form.new__message
+      .input__box
+        %input{type: "text", class: "input__box__text", placeholder: "type a message"}
+        %label{class: "input__box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input__box__image--file"}
+      %input{type: "submit", class: "submit__btn"}
+          
